@@ -1,18 +1,2 @@
 [
-    {
-        "File Type": ".fspy",
-        "Icon Path": "C:\\ProgramData\\Prism2\\plugins\\CustomPlugIns\\FileIconsMenu\\Icons\\fSpy.png"
-    },
-    {
-        "File Type": ".xcf",
-        "Icon Path": "C:\\ProgramData\\Prism2\\plugins\\CustomPlugIns\\FileIconsMenu\\Icons\\Gimp.png"
-    },
-    {
-        "File Type": ".sni",
-        "Icon Path": "C:\\ProgramData\\Prism2\\plugins\\CustomPlugIns\\FileIconsMenu\\Icons\\SynthEyes.png"
-    },
-    {
-        "File Type": ".kmz",
-        "Icon Path": "C:\\ProgramData\\Prism2\\plugins\\CustomPlugIns\\FileIconsMenu\\Icons\\google_earth.ico"
-    }
 ]
