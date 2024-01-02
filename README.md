@@ -12,6 +12,9 @@ https://prism-pipeline.com/
 
 The FileIconsMenu plugin adds a menu to the Prism2 User Settings menu.  In this menu a user may add file types to be associated with selected icons.  This allows Prism's UI to show icons for file type that are not supported.
 
+For example, at present there is no intergration for SynthEyes.  But when a .sni extension is associated with a SynthEyes icon, Prism2's UI will display the icon correctly.
+
+There is no other functionality besides the UI.
 
 
 ## **Installation**
