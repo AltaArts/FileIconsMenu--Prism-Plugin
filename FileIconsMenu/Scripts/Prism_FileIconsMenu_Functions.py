@@ -32,11 +32,11 @@
 # along with Prism.  If not, see <https://www.gnu.org/licenses/>.
 #
 ####################################################
-####################################################
 #
 #           FILE ICON MENU PLUGIN
 #           by Joshua Breckeen
 #                Alta Arts
+#           josh@alta-arts.com
 #
 #   This PlugIn adds a sub-Menu to the Settings Menu to allow the
 #   user to select icon images to associate with file types that 
