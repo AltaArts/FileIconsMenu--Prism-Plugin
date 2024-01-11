@@ -50,7 +50,7 @@ import os
 
 class Prism_FileIconsMenu_Variables(object):
     def __init__(self, core, plugin):
-        self.version = "v2.0.2-1.3"
+        self.version = "v2.0.2-1.4"
         self.pluginName = "FileIconsMenu"
         self.pluginType = "Custom"
         self.platforms = ["Windows", "Linux", "Darwin"]

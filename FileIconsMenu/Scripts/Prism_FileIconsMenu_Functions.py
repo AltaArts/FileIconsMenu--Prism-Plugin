@@ -168,7 +168,9 @@ class Prism_FileIconsMenu_Functions(object):
 
                 # Copy the icon file to Plugin Icon Dir
                 newPath = os.path.join(iconDir, os.path.basename(path))
-                shutil.copy2(path, newPath)
+                # Handles case of icon already existing in location
+                if os.path.abspath(newPath) != os.path.abspath(path):
+                    shutil.copy2(path, newPath)
 
                 # Adds new selection to UI list
                 row_position = tw_fileIcon.rowCount()
