@@ -126,10 +126,14 @@ class Prism_FileIconsMenu_Functions(object):
         lo_fileIcon.addWidget(w_fileIcon)
         origin.lo_fileIcon.addWidget(gb_fileIcon)
 
-        #   Sets Columns
+        # Configure table options
         tw_fileIcon.setSizePolicy(QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding))
-        #   Makes ReadOnly
         tw_fileIcon.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        tw_fileIcon.setSelectionBehavior(QTableWidget.SelectRows)
+        tw_fileIcon.setSelectionMode(QTableWidget.SingleSelection)
+
+        tip = "Icons associated with filetypes in Prism UI.\n\nFiles will be opened using Prism's default behavior."
+        tw_fileIcon.setToolTip(tip)
 
         #   Executes button actions
         b_addFileIcon.clicked.connect(lambda: self.addFileIcon(origin, tw_fileIcon))
@@ -263,12 +267,20 @@ class AddFileIconDialog(QDialog):
 
         self.l_name = QLabel("File Extension")
         self.le_name = QLineEdit()
+
+        #   Tooltips
+        tip = "File extension.  Examples:  .py .fspy  .xcf"
+        self.l_name.setToolTip(tip)
+        self.le_name.setToolTip(tip)
         # Set the initial text to include a period
         self.le_name.setText('.')
 
         self.l_location = QLabel("Icon Location:")
         self.but_location = QPushButton("Select Icon")
         self.but_location.clicked.connect(self.selectLocation)
+        tip = "Choose icon file.  Allowed: .ico .png .jpg .bmp"
+        self.l_location.setToolTip(tip)
+        self.but_location.setToolTip(tip)
 
         self.but_ok = QPushButton("OK")
         self.but_ok.clicked.connect(self.accept)
